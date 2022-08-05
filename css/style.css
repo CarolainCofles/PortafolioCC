@@ -6,10 +6,14 @@
     box-sizing: border-box;
 }
 
+.bg{
+    background-color: #F4F2E6;
+}
+
 #grid_container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25px 100px auto auto;
+    grid-template-rows: 25px auto auto auto;
     grid-template-areas: "container_line_one"
                          "header"
                          "main"
@@ -49,7 +53,12 @@ h4{
     font-size: 0.9rem;   
 }
 
-h5{
+.h5{
+    font-family: 'Space Grotest', sans-serif;
+    font-weight: 300;
+}
+
+.h6{
     font-family: 'Space Grotest', sans-serif;
     font-weight: 300;
 }
@@ -75,42 +84,20 @@ p{
 header{
     grid-area: header;
     border-bottom:#21201F solid 1px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 2% 1% 2%;
 }
 
-.logo{
-    width: 100%;
+.navbar{
+    padding-right:1rem;
+    padding-left:1rem;
 }
 
-.header_menu li{
-    display: inline-block;
-    list-style-type: none;
+.navbar-toggler{
+    width: auto;
+    border:#21201F solid 1px;
+    border-radius: 4em;
+    color: #21201F;
 }
 
-
-.header_menu li:not(:last-of-type){
-    margin: 1.5rem 1.5rem;
-}
-
-li a:hover{
-    text-decoration: underline;
-}
-/*burgermenu-index*/
-
-.checkbtn{
-    font-size: 30px;
-    color: #F4F2E6;
-    line-height: 80px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
 
 /*------------------------------FOOTER------------------------------*/
 footer{
@@ -121,6 +108,10 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#behance_icon{
+    margin-left: 2rem;
 }
 
 
@@ -150,7 +141,7 @@ main{
     text-align: center;
 }
 
-.instagram_feed{
+#instagram_feed{
     height: 200px;
     margin-top: 2%;
     padding: 2% 0;
@@ -436,55 +427,6 @@ h2{
 }
 
 /*------------------------------HEADER------------------------------*/
-header{
-    grid-area: header;
-    border-bottom:#21201F solid 1px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 4% 1% 4%;
-}
-
-.logo{
-    width: 100%;
-}
-
-
-/*burgermenu*/
-
-.checkbtn{
-    display: block;
-    color: #21201F;
-} 
-
-ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #21201F;
-    top: 125px;
-    left: 100%;
-    text-align: center;
-    transition: all .4s;
-}
-
-.header_menu li{
-    display: block;
-}
-
-
-nav ul li a{
-    color: #F4F2E6;
-}
-
-li a:hover, li a.active{
-    background: none;
-    color: #FF98F9;
-}
-
-#check:checked ~ ul{
-    left:0;
-}
 
 
 /*------------------------------FOOTER------------------------------*/
