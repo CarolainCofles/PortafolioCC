@@ -283,30 +283,30 @@ button {
    
    button:hover {
     background-image: linear-gradient(to right, #FF98F9 0%, #CCFF00 100%);
+    color: #21201F;
    }
    
 
-.proyects{
+#gallery{
     width: 100%;
     padding: 2rem 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row: repeat(3, 1fr);
-    justify-items: stretch;
-    column-gap: 0;
-    row-gap: 0;
 }
 
-.proyects img{
+.col-lg-4{
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+#gallery img{
+    border: #21201F solid 1px;
     width: 100%;
     height: 100%;
 }
 
-.proyect{
-    border: #21201F solid 1px;
+#gallery img:hover {
+    border: #FF98F9 solid 3px;
 }
-
 /*------------------------------------------------CONTACT------------------------------------------------*/
 
 
@@ -327,44 +327,30 @@ button {
 form{
     width: 50%;
     padding: 2%;
-}
-
-fieldset{
-    border: none;
-}
-
-input, textarea{
     font-family: 'Space Grotesk', sans-serif;
-    width: 100%;
 }
 
-input[type="submit"] {
-    height: 1.5rem;
+.btn-primary {
     background-color: #21201F;
-    color: #F4F2E6;
-    border-radius: 2em;
-    border: #21201F 1px solid;
-    display: block;
-  }
+    border:none;
+    width: 100%;
+    border-radius: 3em;
+}
 
-  textarea{
-    min-width: 100%;
-    min-height: 200px;
-  }
+.btn-primary:hover{
+        background-image: linear-gradient(to right, #FF98F9 0%, #CCFF00 100%);
+        color: #21201F;
+        border: #21201F solid 1px;
+}
 
-  input, textarea, input[type="submit"]{
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-    font-size: 0.9rem;
-   } 
+.form-control{
+    border: #21201F solid 1px;
+}
 
-   input:focus {
-    background-color: #ffe6fe;
-   }
-
-   textarea:focus{
-    background-color: #ffe6fe;
-   }
+.form-control:focus{
+    border: #FF98F9 solid 3px;
+    box-shadow: none;
+}
 
   /*------------------------------------------------SHOP------------------------------------------------*/
 
@@ -611,17 +597,7 @@ footer{
     margin: 0.5rem 0.2rem;
 }
 
-.proyects{
-    width: 100%;
-    padding: 1rem 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: repeat(8, 1fr);
-    justify-items: stretch;
-    column-gap: 0;
-    row-gap: 0;
-}
+
 
 /*------------------------------------------------CONTACT------------------------------------------------*/
 
