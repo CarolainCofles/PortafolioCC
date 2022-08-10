@@ -119,7 +119,7 @@ footer{
 main{
     grid-area: main;
     border-bottom:#21201F solid 1px;
-    padding: 4%;
+    padding: 3rem;
     min-height: 500px;
 }
 
@@ -142,13 +142,22 @@ main{
 }
 
 #instagram_feed{
+    width: 100%;
     height: 200px;
-    margin-top: 2%;
-    padding: 2% 0;
     text-align: center;
-    border: 1px solid #21201F;
+    overflow: hidden;
 }
 
+#instagram_feed img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+}
+
+.container{
+    min-width: 100%;
+    padding: 0%;
+}
 
 /*------------------------------------------------ABOUT------------------------------------------------*/
 
@@ -411,9 +420,6 @@ h2{
     font-family: 'Syne', sans-serif;
     font-weight: 700;
 }
-
-/*------------------------------HEADER------------------------------*/
-
 
 /*------------------------------FOOTER------------------------------*/
 footer{

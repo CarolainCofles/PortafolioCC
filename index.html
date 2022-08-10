@@ -50,8 +50,18 @@
                 </div>
                 <img class="portrait" src="./imgs/portrait.png" alt="portrait">
             </div>
-            <div class="container-fluid" id="instagram_feed">
-                <p>Instagram feed</p>
+            <div class="container" id="instagram_feed">
+                <div id="instafeed-container"></div>
+                <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+                <script type="text/javascript">
+                    var userFeed = new Instafeed({
+                        get: 'user',
+                        target: "instafeed-container",
+                        resolution: 'low_resolution',
+                        accessToken: 'IGQVJWdGU3R0R2dXRCM2RpcU1SZAWtManVqWmQwZAjJrVG0tWkp4LWw0VVk1dGhzY0hnMF9KUlRjTHlsMnlQeUxzMmd6WEF4WEYyeU9sdG1kOU44cFl3ZAXZAGYVZASM3Rfb3VWMFF0dUVwTEMyaGdKWjdKZAwZDZD'
+                    });
+                    userFeed.run();
+                </script>
             </div>
         </main>
         <footer>
